@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Template is working</title>
+</head>
+<body>
+    <h1>This is a template</h1>
+    <form action="/analyze"method="post">{% csrf_token %}
+        <textarea name='text' style="margin: 0px; width: 1384px; height: 103px;"></textarea><br>
+        <input name='removepunc'type="checkbox">Remove punctuation</input><br>
+        <input name='uppercase'type="checkbox">Change to Uppercase</input><br>
+        <input name='newlineremoval'type="checkbox">newlineremoval</input><br>
+        <input name='extarspaceremoval'type="checkbox">extarspaceremoval</input><br>
+        <input name='countCharacter'type="checkbox">countCharacter</input><br>
+        <button>Analyze text</button>
+    </form>
+</body>
+</html>
